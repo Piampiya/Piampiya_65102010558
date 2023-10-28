@@ -1,0 +1,14 @@
+[2023-10-14T05:17:01.984+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_pipeline.read_db scheduled__2023-10-14T05:16:00+00:00 [queued]>
+[2023-10-14T05:17:01.991+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_pipeline.read_db scheduled__2023-10-14T05:16:00+00:00 [queued]>
+[2023-10-14T05:17:01.992+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-14T05:17:02.007+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): read_db> on 2023-10-14 05:16:00+00:00
+[2023-10-14T05:17:02.012+0000] {standard_task_runner.py:57} INFO - Started process 3159 to run task
+[2023-10-14T05:17:02.015+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'example_pipeline', 'read_db', 'scheduled__2023-10-14T05:16:00+00:00', '--job-id', '452', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_lab.py', '--cfg-path', '/tmp/tmpc9snqa1d']
+[2023-10-14T05:17:02.017+0000] {standard_task_runner.py:85} INFO - Job 452: Subtask read_db
+[2023-10-14T05:17:02.057+0000] {task_command.py:415} INFO - Running <TaskInstance: example_pipeline.read_db scheduled__2023-10-14T05:16:00+00:00 [running]> on host 89ffa62682cc
+[2023-10-14T05:17:02.285+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_pipeline' AIRFLOW_CTX_TASK_ID='read_db' AIRFLOW_CTX_EXECUTION_DATE='2023-10-14T05:16:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-14T05:16:00+00:00'
+[2023-10-14T05:17:02.292+0000] {base.py:73} INFO - Using connection ID 'mydb' for task execution.
+[2023-10-14T05:17:02.413+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-14T05:17:02.421+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=example_pipeline, task_id=read_db, execution_date=20231014T051600, start_date=20231014T051701, end_date=20231014T051702
+[2023-10-14T05:17:02.468+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-14T05:17:02.488+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

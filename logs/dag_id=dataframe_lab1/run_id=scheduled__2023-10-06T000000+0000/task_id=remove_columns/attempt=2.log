@@ -1,0 +1,13 @@
+[2023-10-07T05:58:36.081+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataframe_lab1.remove_columns scheduled__2023-10-06T00:00:00+00:00 [queued]>
+[2023-10-07T05:58:36.090+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataframe_lab1.remove_columns scheduled__2023-10-06T00:00:00+00:00 [queued]>
+[2023-10-07T05:58:36.091+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2023-10-07T05:58:36.107+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): remove_columns> on 2023-10-06 00:00:00+00:00
+[2023-10-07T05:58:36.113+0000] {standard_task_runner.py:57} INFO - Started process 1084 to run task
+[2023-10-07T05:58:36.117+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dataframe_lab1', 'remove_columns', 'scheduled__2023-10-06T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/titanic.py', '--cfg-path', '/tmp/tmpczbu1et9']
+[2023-10-07T05:58:36.121+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask remove_columns
+[2023-10-07T05:58:36.167+0000] {task_command.py:415} INFO - Running <TaskInstance: dataframe_lab1.remove_columns scheduled__2023-10-06T00:00:00+00:00 [running]> on host 89ffa62682cc
+[2023-10-07T05:58:36.412+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataframe_lab1' AIRFLOW_CTX_TASK_ID='remove_columns' AIRFLOW_CTX_EXECUTION_DATE='2023-10-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-06T00:00:00+00:00'
+[2023-10-07T05:58:36.435+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-07T05:58:36.442+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=dataframe_lab1, task_id=remove_columns, execution_date=20231006T000000, start_date=20231007T055836, end_date=20231007T055836
+[2023-10-07T05:58:36.491+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-07T05:58:36.503+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,13 @@
+[2023-10-07T05:58:37.923+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataframe_lab1.random_Price scheduled__2023-10-06T00:00:00+00:00 [queued]>
+[2023-10-07T05:58:37.936+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataframe_lab1.random_Price scheduled__2023-10-06T00:00:00+00:00 [queued]>
+[2023-10-07T05:58:37.937+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2023-10-07T05:58:37.949+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): random_Price> on 2023-10-06 00:00:00+00:00
+[2023-10-07T05:58:37.956+0000] {standard_task_runner.py:57} INFO - Started process 1089 to run task
+[2023-10-07T05:58:37.958+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dataframe_lab1', 'random_Price', 'scheduled__2023-10-06T00:00:00+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/titanic.py', '--cfg-path', '/tmp/tmpcm90gz78']
+[2023-10-07T05:58:37.960+0000] {standard_task_runner.py:85} INFO - Job 41: Subtask random_Price
+[2023-10-07T05:58:37.995+0000] {task_command.py:415} INFO - Running <TaskInstance: dataframe_lab1.random_Price scheduled__2023-10-06T00:00:00+00:00 [running]> on host 89ffa62682cc
+[2023-10-07T05:58:38.189+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dataframe_lab1' AIRFLOW_CTX_TASK_ID='random_Price' AIRFLOW_CTX_EXECUTION_DATE='2023-10-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-06T00:00:00+00:00'
+[2023-10-07T05:58:38.247+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-07T05:58:38.255+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=dataframe_lab1, task_id=random_Price, execution_date=20231006T000000, start_date=20231007T055837, end_date=20231007T055838
+[2023-10-07T05:58:38.291+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-07T05:58:38.304+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
